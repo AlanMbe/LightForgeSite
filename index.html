@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LightForge</title>
+  <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    header{
+      background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../img/background.jpg);
+      background-size: cover;
+      background-position: center;
+      min-height: 100vh;
+    }
+    body{
+            margin: 0 auto;
+        }
+
+    ul{
+      float: right;
+      list-style-type: none;
+      margin: 15px;
+    }
+    ul li{
+      display: inline-block;
+    }
+
+    ul li a{
+      text-decoration: none;
+      color: #fff;
+      padding: 5px 20px;
+      border: 1px solid transparent;
+      transition: .6s ease;
+      border-radius: 20px;
+    }
+
+    ul li a:hover{
+      background-color: #fff;
+      color: #000;
+    }
+    ul li.active a{
+      background-color: #fff;
+      color: #000;
+    }
+    .title{
+      position:fixed;
+      top:20%;
+      left:50%;
+      transform: translate(-50%,-50%);
+    }
+    .title h1{
+      color: #fff;
+      font-size: 70px;
+    }
+    .developtools {
+      position: fixed;
+      top: 40%;
+      font-size: 25px;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="main">
+    <ul>
+      <li class="active"><a href="javascript:location.reload();">HomePage</a></li>
+      <li><a href="./developtools/index.html" target="_blank">Develop Tools</a></li>
+      <li><a href="" target="_blank">Announcement</a></li>
+      <li><a href="" target="_blank">About</a></li>
+    </ul>
+  </div>
+  <div class="title">
+    <h1><span style="color: crimson;">LightForge</span><br>Site</h1>
+  </div>
+  <div class="developtools">
+    <h2><span style="color: crimson;">Develop Tools</span></h2>
+    <h3 style="color: white">PySharpCode</h3>
+    <table border="1" style="color: white;text-align: center;margin: 0 auto;">
+      <thead>
+      </thead>
+      <tbody>
+      <tr>
+        <td><img src="./img/pysharpcode.ico">
+          <p style="color: white"><a href="./developtools/pysharpcode.html" target="_blank">IDE for Python and C#</a></p></td>
+
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</header>
+</body>
+
+<!-- LightForgeSite/
+|-index.html
+|-img
+  |-background.jpg
+  |-pysharpcode.ico
+|-developtools
+  |-index.html
+  |-pysharpcode.html -->

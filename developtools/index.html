@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Develop Tools</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../img/background.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed; /* 可选，让背景随页面滚动 */
+        }
+        header {
+            background: none; /* 不要再设置背景图 */
+        }
+
+        ul{
+            float: right;
+            list-style-type: none;
+            margin: 15px;
+        }
+        ul li{
+            display: inline-block;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: .6s ease;
+            border-radius: 20px;
+        }
+
+        ul li a:hover{
+            background-color: #fff;
+            color: #000;
+        }
+        ul li.active a{
+            background-color: #fff;
+            color: #000;
+        }
+        .title{
+            position:fixed;
+            top:20%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .title h1{
+            color: #fff;
+            font-size: 70px;
+
+        }
+        .developtools {
+            position: fixed;
+            top: 40%;
+            font-size: 25px;
+
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="main">
+        <ul>
+            <li><a href="../index.html">HomePage</a></li>
+            <li class="active"><a href="javascript:location.reload();" target="_blank">Develop Tools</a></li>
+            <li><a href="" target="_blank">Announcement</a></li>
+            <li><a href="" target="_blank">About</a></li>
+        </ul>
+    </div>
+    <div class="title">
+        <h1><span style="color: crimson;">LightForge</span><br>Develop Tools</h1>
+    </div>
+    <div class="developtools">
+        <h2><span style="color: crimson;">Develop Tools</span></h2>
+        <h3 style="color: white">PySharpCode</h3>
+        <table border="1" style="color: white;text-align: center;margin: 0 auto;">
+            <thead>
+            </thead>
+            <tbody>
+            <tr>
+                <td><img src="../img/pysharpcode.ico">
+                    <p style="color: white"><a href="./pysharpcode.html" target="_blank">IDE for Python and C#</a></p></td>
+
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+</header>
+</body>
+

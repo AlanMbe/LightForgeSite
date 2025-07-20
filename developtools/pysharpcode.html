@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PySharpCode</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/style.css" /> -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../img/bg.png);
+            background-color: black;
+            /* background-size: cover; */
+            background-position: center;
+            /* min-height: 200vh; */
+            text-align: center;
+        }
+
+        /*div{*/
+        /*    margin: 0 auto;*/
+        /*}*/
+
+        .nav-menu{
+            float: right;
+            list-style-type: none;
+            margin: 15px;
+        }
+        ul li{
+            display: inline-block;
+        }
+
+        ul li a{
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid transparent;
+            transition: .6s ease;
+            border-radius: 20px;
+        }
+        .features li {
+            /* align-content: center;
+            background: #ffffff;
+            margin: 0.5em 0;
+            padding: 0.8em 1em;
+            border-left: 5px solid #007bff;
+            border-radius: 4px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05); */
+            color: white;
+        } 
+        .features {
+            text-align: left;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        .features ul {
+            float: none;
+            text-align: center;
+            margin: 0;
+        }
+
+        ul li a:hover{
+            background-color: #fff;
+            color: #000;
+        }
+        ul li.active a{
+            background-color: #fff;
+            color: #000;
+        }
+        .title{
+            /* position:fixed; */
+            top:20%;
+            left:50%;
+            transform: translate(-50%,-50%);
+        }
+        .title h1{
+            color: #fff;
+            font-size: 70px;
+        }
+        .developtools {
+            /* position: fixed; */
+            top: 40%;
+            font-size: 25px;
+        }
+        table {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="main">
+        <ul class="nav-menu">
+            <li><a href="../index.html">HomePage</a></li>
+            <li class="active"><a href="./index.html">Develop Tools</a></li>
+            <li><a href="" target="_blank">Announcement</a></li>
+            <li><a href="" target="_blank">About</a></li>
+        </ul>
+    </div>
+    <br><br>
+    <div class="developtools">
+        <h3 style="color: white;text-align: center;"><br>PySharpCode</h3>
+        <table border="1" style="color: white;text-align: center;margin: 0 auto;">
+            <thead>
+                <tr>
+                    <th>Version</th>
+                    <th>Zip</th>
+                    <th>Executable Installer</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>v2.2</td>
+                <td><a href="https://www.123912.com/s/X9Zajv-63aq">Download</a></td>
+                <td><a href="https://www.123912.com/s/X9Zajv-y3aq">Download</a></td>
+            </tr>
+            <tr>
+                <td>v2.1</td>
+                <td><a href="https://www.123912.com/s/X9Zajv-1yfq">Download</a></td>
+                <td><a href="https://www.123912.com/s/X9Zajv-4yfq">Download</a></td>
+            </tr>
+            <tr>
+                <td>v2.0</td>
+                <td><a href="https://www.123912.com/s/X9Zajv-pefq">Download</a></td>
+                <td><a href="https://www.123912.com/s/X9Zajv-fefq">Download</a></td>
+            </tr>
+            <tr>
+                <td>v1.3</td>
+                <td><a href="https://www.123912.com/s/X9Zajv-olfq">Download</a></td>
+                <td><a href="https://www.123912.com/s/X9Zajv-glfq">Download</a></td>
+            </tr>
+            <tr>
+                <td>v1.2</td>
+                <td><a href="https://www.123912.com/s/X9Zajv-USaq">Download</a></td>
+                <td><a href="https://www.123912.com/s/X9Zajv-SSaq">Download</a></td>
+            </tr>
+            <tr>
+                <td>v1.1</td>
+                <td><a href="https://www.123912.com/s/X9Zajv-9Ufq">Download</a></td>
+                <td><a href="https://www.123912.com/s/X9Zajv-HUfq">Download</a></td>
+            </tr>
+            <tr>
+                <td>v1.0</td>
+                <td><a href="https://www.123912.com/s/X9Zajv-QUfq">Download</a></td>
+                <td><a href="https://www.123912.com/s/X9Zajv-kUfq">Download</a></td>
+            </tr>
+            </tbody>
+        </table>
+        <h3 style="color: white; text-align: center">ChangeLog</h3>
+          <section class="features">
+            <ul>
+              <li>v2.2 - 2025/7/18: <br>体积优化到了21.7MB，目前体积最小版本，修复了保存.CS文件的BUG</li>
+                <br>
+              <li>v2.1 - 2025/7/13: <br>涨了1MB，但增加了插件系统，用动态数据链优化内存占用</li>
+                <br>
+              <li>v2.0 - 2025/7/5: <br>将体积缩小到22MB，添加多标签页、调试器、性能优化</li>
+                <br>
+              <li>v1.3 - 2025/6/28: <br>提高稳定性</li>
+                <br>
+              <li>v1.2 - 2025/6/27: <br>修改一些bug，修改图标</li>
+                <br>
+              <li>v1.1 - 2025/6/22: <br>增强了 UI 设计器，缩小体积到41MB，修复了一些小问题，提升了稳定性，添加智能补全功能。</li>
+                <br>
+              <li>v1.0 - 2025/6/15: <br>初始版本发布，45MB，支持 Python 和 C#，提供基本的项目管理和代码编辑功能</li>
+                <br>
+            </ul>
+          </section>
+    </div>
+</header>
+</body>
+
